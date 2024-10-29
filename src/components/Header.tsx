@@ -1,4 +1,3 @@
-import React from "react";
 import mohLogo from "../assets/Logo.webp";
 import gitHub from "../assets/github.webp";
 import linkedin from "../assets/linkedin.webp";
@@ -13,7 +12,7 @@ function Header() {
           <div className="md:flex md:items-center md:gap-12">
             <a className="block text-teal-600" href="#">
               <span className="sr-only">Home</span>
-              <img className="h-8 w-auto" src={mohLogo} alt="" />
+              <img className="h-8 w-24" src={mohLogo} alt="" />
             </a>
           </div>
 
@@ -83,8 +82,8 @@ function Header() {
             </nav>
           </div>
 
-          <div className="flex items-center gap-10 ">
-            <div className="flex sm:gap-4">
+          <div className="flex items-center gap-10">
+            <div className="hidden sm:gap-4 md:flex  ">
               <a href="https://github.com/Moh7ven">
                 <img src={gitHub} alt="" className="h-[30] w-[30]" />
               </a>

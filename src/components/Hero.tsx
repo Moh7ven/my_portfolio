@@ -1,4 +1,5 @@
 import mohamedImage from "../assets/mohamed.webp";
+import downloadLogo from "../assets/download.webp";
 
 function Hero() {
   return (
@@ -19,8 +20,11 @@ function Hero() {
           />
         </div>
       </div>
-      <button className="mt-10 bg-green-500 bg-opacity-30 py-4 px-7 rounded-[20px] text-green-500 font-bold border border-green-500">
-        Download CV
+      <button className="mt-10 text-[24px] h-[75px] px-2 bg-green-500 bg-opacity-30  rounded-[20px] text-green-500 font-bold border border-green-500 ">
+        <div className="flex items-center gap-2">
+          Download CV
+          <img src={downloadLogo} alt="" />
+        </div>
       </button>
     </>
   );

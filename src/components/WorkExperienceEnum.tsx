@@ -1,5 +1,3 @@
-import React from "react";
-
 interface WorkExperienceInterface {
   title: string;
   company: string;

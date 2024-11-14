@@ -1,4 +1,3 @@
-import React from "react";
 import { EducationInterface } from "../../types/educationType";
 import EducationEnum from "./EducationEnum";
 

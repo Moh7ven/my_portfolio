@@ -2,7 +2,6 @@ import imageOffice from "../../assets/office.webp";
 import calendar from "../../assets/calendar.webp";
 import { EducationInterface } from "../../types/educationType";
 
-import React from "react";
 
 function EducationEnum({
   title,

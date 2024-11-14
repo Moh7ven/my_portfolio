@@ -1,10 +1,8 @@
-interface WorkExperienceInterface {
-  title: string;
-  company: string;
-  date: string;
-  city: string;
-  occupation: string;
-}
+import imageOffice from "../assets/office.webp";
+import locationLogo from "../assets/lieu.webp";
+import calendar from "../assets/calendar.webp";
+import { WorkExperienceInterface } from "../types/workEperienceType";
+
 function WorkExperienceEnum({
   title,
   company,
@@ -13,17 +11,26 @@ function WorkExperienceEnum({
   occupation,
 }: WorkExperienceInterface) {
   return (
-    <div className="flex flex-col text-[#666666] h-[75px]">
+    <div className="flex flex-col text-[#666666] h-[75px] mt-10">
       <div className="flex justify-between">
-        <p className="text-xl">{title}</p>
-        <div className="flex items-center justify-center text-[12px] text-green-800 font-bold p-5 bg-green-400 bg-opacity-30 w-[137px] h-6 rounded-[20px]">
+        <p className="text-xl font-normal">{title}</p>
+        <div className="flex items-center justify-center text-[12px] text-green-800 font-semibold p-2 bg-green-500 bg-opacity-20 w-[137px] h-6 rounded-[20px]">
           {occupation}
         </div>
       </div>
-      <div className="flex justify-between text-[10px]">
-        <p className="text-xl">{company}</p>
-        <p className="text-xl">{city}</p>
-        <p className="text-xl">{date}</p>
+      <div className="flex justify-between text-[12px] mt-2 w-[93%]">
+        <div className="flex justify-center items-center gap-2">
+          <img src={imageOffice} alt="" className="w-[25px] h-[20px]" />
+          <p className="opacity-50">{company}</p>
+        </div>
+        <div className="flex justify-center items-center gap-2">
+          <img src={locationLogo} alt="" className="w-[25px] h-[20px]" />
+          <p className="font-medium opacity-60">{city}</p>
+        </div>
+        <div className="flex justify-center items-center gap-2">
+          <img src={calendar} className="w-[25px] h-[20px]" alt="" />
+          <p className="font-medium opacity-60">{date}</p>
+        </div>
       </div>
     </div>
   );

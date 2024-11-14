@@ -1,7 +1,7 @@
-import imageOffice from "../assets/office.webp";
-import locationLogo from "../assets/lieu.webp";
-import calendar from "../assets/calendar.webp";
-import { WorkExperienceInterface } from "../types/workEperienceType";
+import imageOffice from "../../assets/office.webp";
+import locationLogo from "../../assets/lieu.webp";
+import calendar from "../../assets/calendar.webp";
+import { WorkExperienceInterface } from "../../types/workEperienceType";
 
 function WorkExperienceEnum({
   title,

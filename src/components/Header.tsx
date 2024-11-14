@@ -84,7 +84,7 @@ function Header() {
 
           <div className="flex items-center gap-10">
             <div className="hidden sm:gap-4 md:flex  ">
-              <a href="https://github.com/Moh7ven">
+              <a href="https://github.com/Moh7ven" target="blank">
                 <img src={gitHub} alt="" className="h-[30] w-[30]" />
               </a>
 

@@ -1,5 +1,5 @@
 import WorkExperienceEnum from "./WorkExperienceEnum";
-import { WorkExperienceInterface } from "../types/workEperienceType";
+import { WorkExperienceInterface } from "../../types/workEperienceType";
 
 function WorkExperience() {
   const workExperiences = [
@@ -22,7 +22,7 @@ function WorkExperience() {
       company: "NaN Digital Academy",
       date: "Jun 2023 - Today",
       city: "Abidjan",
-      occupation: "Full time",
+      occupation: "Internship",
     },
   ];
   return (
@@ -30,9 +30,9 @@ function WorkExperience() {
       <h2 className="text-[42px] font-bold text-left text-[#42446E]">
         Work Experience
       </h2>
-      <div className="mt-8">
+      <div className="mt-5">
         {workExperiences.map((workExperience: WorkExperienceInterface) => (
-          <div className="md:gap-5 mt-5 flex flex-col gap-5 ">
+          <div className="md:gap-5 flex flex-col gap-5 ">
             <WorkExperienceEnum
               key={workExperience.title}
               title={workExperience.title}
